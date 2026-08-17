@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anna | Independent Financial Advisory</title>
+  <!-- Google Fonts: Editorial Serif + Modern Clean Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="header">
+    <div class="container nav-wrapper">
+      <a href="#" class="brand">
+        <span class="brand-name">Anna</span>
+        <span class="brand-sub">Advisory</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#philosophy" data-i18n="nav_philosophy">Philosophy</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <!-- Language Selector -->
+      <div class="lang-picker">
+        <select id="lang-select">
+          <option value="en" selected>English</option>
+          <option value="de">Deutsch</option>
+          <option value="uk">Українська</option>
+          <option value="ru">Русский</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Portrait -->
+  <section class="container hero">
+    <div class="hero-content">
+      <span class="pill" data-i18n="hero_pill">Independent Wealth & Cross-Border Advisory</span>
+      <h1 class="hero-title" data-i18n="hero_title">
+        Thoughtful, private financial guidance tailored to <em>your real life.</em>
+      </h1>
+      <p class="hero-desc" data-i18n="hero_desc">
+        Navigating cross-border finances, relocations, and wealth structuring shouldn't feel clinical. I provide clear, discreet, and personal counsel across Europe and Eastern markets.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary" data-i18n="hero_btn_main">Book a Confidential Call</a>
+        <a href="#about" class="btn btn-link" data-i18n="hero_btn_secondary">Meet Anna &rarr;</a>
+      </div>
+    </div>
+
+    <!-- Hero Portrait Media (Editorial Illustration Placeholder) -->
+    <div class="hero-media">
+      <div class="portrait-wrapper">
+        <img 
+          src="assets/images/anna-ai.png"
+          alt="Anna - Financial Advisor" 
+          class="portrait-img" 
+        />
+        <!-- Velo y saludo interactivo -->
+        <div class="portrait-overlay">
+          <div class="overlay-quote-mark">“</div>
+          <p class="overlay-text"           data-i18n="portrait_greeting">
+            Finance should empower your vision, not complicate your life. Let’s build something lasting together.
+          </p>
+          <span class="overlay-signature">— Anna</span>
+        </div>
+
+        <!-- Píldora interactiva de idiomas -->
+        <div class="floating-badge" tabindex="0">
+          <div class="badge-layer badge-default">
+            <span class="pulse-dot"></span>
+            <span class="badge-text" data-i18n="bio_badge">Consulting in 4 Languages</span>
+          </div>
+          <div class="badge-layer badge-hover">
+            <span class="lang-pill">EN</span>
+            <span class="lang-pill">DE</span>
+            <span class="lang-pill">UK</span>
+            <span class="lang-pill">RU</span>
+          </div>
+        </div>      
+      </div>
+    </div>
+  </section>
+
+    <!-- Personal Intro / About Mini -->
+    <section id="about" class="container bio-section">
+      <div class="bio-card">
+        <!--A "redondeada"--> 
+        <div class="bio-visual">
+          <div class="avatar-placeholder">
+            <img 
+              src="assets/images/anna-ai.png" 
+              alt="Anna Portrait" 
+            />
+          </div>
+          <div class="bio-tag">
+            <span class="dot"></span>
+            <span data-i18n="bio_badge">Consulting in 4 Languages</span>
+          </div>
+        </div>
+
+        <div class="bio-text">
+          <h2 data-i18n="bio_title">A discreet partner in an unpredictable world.</h2>
+          <p data-i18n="bio_p1">
+            Large consulting firms often treat international wealth as simple spreadsheets. In reality, relocating assets, navigating multi-state taxes, and protecting a family fund require nuance and deep trust.
+          </p>
+          <p data-i18n="bio_p2">
+            I work directly with founders, expat professionals, and private families who value tailored discretion over institutional bureaucracy.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="container services-section">
+      <div class="section-title-wrap">
+        <span class="section-kicker" data-i18n="srv_kicker">Areas of Practice</span>
+        <h2 data-i18n="srv_heading">Focused counsel where it matters most.</h2>
+      </div>
+
+      <div class="services-list">
+        <article class="service-item">
+          <span class="item-index">01</span>
+          <div class="item-body">
+            <h3 data-i18n="srv_1_title">Cross-Border Asset Planning</h3>
+            <p data-i18n="srv_1_desc">Structuring assets across European and Eastern jurisdictions with a focus on compliance, privacy, and tax efficiency.</p>
+          </div>
+        </article>
+
+        <article class="service-item">
+          <span class="item-index">02</span>
+          <div class="item-body">
+            <h3 data-i18n="srv_2_title">Private Wealth & Preservation</h3>
+            <p data-i18n="srv_2_desc">Holistic long-term strategies designed to defend purchasing power against macroeconomic instability.</p>
+          </div>
+        </article>
+
+        <article class="service-item">
+          <span class="item-index">03</span>
+          <div class="item-body">
+            <h3 data-i18n="srv_3_title">Family & Relocation Finance</h3>
+            <p data-i18n="srv_3_desc">Clear roadmaps for families relocating across borders, managing multi-currency cash flows, and securing generational continuity.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section id="philosophy" class="philosophy-section">
+      <div class="container philosophy-grid">
+        <div class="philo-box">
+          <h4 data-i18n="phil_1_title">Unbiased & Independent</h4>
+          <p data-i18n="phil_1_desc">No hidden commissions or third-party incentives. Recommendations are guided solely by your priorities.</p>
+        </div>
+        <div class="philo-box">
+          <h4 data-i18n="phil_2_title">Strict Discretion</h4>
+          <p data-i18n="phil_2_desc">Direct one-on-one communication without intermediaries or layered assistants.</p>
+        </div>
+        <div class="philo-box">
+          <h4 data-i18n="phil_3_title">Cultural Fluency</h4>
+          <p data-i18n="phil_3_desc">Native comprehension of legal and cultural nuances across Western and Eastern European spheres.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container contact-section">
+      <div class="contact-card">
+        <h2 data-i18n="contact_heading">Let’s discuss your financial roadmap.</h2>
+        <p data-i18n="contact_sub">Preliminary discussions are always confidential and non-binding.</p>
+        
+        <form class="contact-form" onsubmit="event.preventDefault();">
+          <div class="form-row">
+            <input type="text" placeholder="Your Name" required data-i18n-ph="ph_name" />
+            <input type="email" placeholder="Your Email" required data-i18n-ph="ph_email" />
+          </div>
+          <textarea rows="3" placeholder="Briefly describe what you would like to resolve..." required data-i18n-ph="ph_msg"></textarea>
+          <button type="submit" class="btn btn-primary" data-i18n="contact_btn">Send Confidential Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <!--
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="copyright">© 2026 Anna Advisory. All rights reserved.</p>
+      <div class="footer-note" data-i18n="footer_note">Berlin • Zurich • Kyiv</div>
+    </div>
+  </footer>
+  -->
+
+  <!-- Enhanced Editorial Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <!-- Brand & Positioning -->
+      <div class="footer-col footer-about">
+        <div class="brand">
+          <span class="brand-name">Anna</span>
+          <span class="brand-sub">Advisory</span>
+        </div>
+        <p class="footer-desc" data-i18n="footer_desc">
+          Independent cross-border wealth management and private financial counsel across Europe.
+        </p>
+        <div class="social-links">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/anna-sarana-a09b88138/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <!-- Telegram -->
+          <a href="https://t.me" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Telegram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </a>
+          <!-- WhatsApp -->
+          <a href="https://wa.me" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Navigation -->
+      <div class="footer-col">
+        <h4 class="footer-heading" data-i18n="footer_nav_title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#about" data-i18n="nav_about">About</a></li>
+          <li><a href="#services" data-i18n="nav_services">Services</a></li>
+          <li><a href="#philosophy" data-i18n="nav_philosophy">Philosophy</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Berlin Legal Office & Contact -->
+      <div class="footer-col">
+        <h4 class="footer-heading" data-i18n="footer_office_title">Berlin Office</h4>
+        <address class="footer-address">
+          <p>Friedrichstraße 176</p>
+          <p>10117 Berlin, Deutschland</p>
+          <p class="contact-line">
+            <a href="tel:+493012345678" class="contact-link">+49 (0) 30 1234 5678</a>
+          </p>
+          <p class="contact-line">
+            <a href="mailto:contact@anna-advisory.de" class="contact-link">contact@anna-advisory.de</a>
+          </p>
+        </address>
+      </div>
+
+      <!-- Legal Links -->
+      <div class="footer-col">
+        <h4 class="footer-heading" data-i18n="footer_legal_title">Legal & Privacy</h4>
+        <ul class="footer-links">
+          <li><a href="#impressum" data-i18n="footer_impressum">Impressum</a></li>
+          <li><a href="#datenschutz" data-i18n="footer_privacy">Datenschutz</a></li>
+          <li><a href="#terms" data-i18n="footer_terms">Terms of Engagement</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Subfooter / Authorship -->
+    <div class="subfooter">
+      <div class="container subfooter-content">
+        <p class="copyright">
+          © 2026 Anna Advisory. All rights reserved.
+          <span class="divider">|</span>
+          Web Design by <a href="https://github.com/danielopezpiepoli" class="author-link" target="_blank" rel="noopener noreferrer">Daniel López Piepoli</a>
+        </p>
+        <div class="footer-jurisdictions" data-i18n="footer_note">Berlin • Kyiv</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
