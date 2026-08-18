@@ -59,6 +59,11 @@ body {
   display: flex;
   align-items: baseline;
   gap: 6px;
+  position: relative;
+  z-index: 105; /* Por encima de cualquier fondo o drawer */
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .brand-name {
@@ -75,6 +80,11 @@ body {
   letter-spacing: 0.12em;
   color: var(--accent-sage);
   font-weight: 600;
+}
+
+.brand-name,
+.brand-sub {
+  pointer-events: none; /* Asegura que el clic siempre lo reciba el enlace <a> */
 }
 
 .nav-links {
@@ -192,6 +202,7 @@ body {
   padding: 32px 24px;
   transform: translateY(-100%);
   opacity: 0;
+  pointer-events: none; /* <-- CRUCIAL: evita que bloquee clics cuando está cerrado */
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
   border-bottom: 1px solid var(--border-soft);
   z-index: 99;
@@ -200,6 +211,7 @@ body {
 .mobile-nav.active {
   transform: translateY(0);
   opacity: 1;
+  pointer-events: auto; /* Solo recibe toques cuando está abierto */
 }
 
 .mobile-nav-links {
