@@ -9,7 +9,7 @@
 
 > A bespoke, multi-page digital platform engineered for private wealth preservation, family relocation finance, and European regulatory compliance (Berlin • Kyiv).
 
-🔗 **Live Production Deployment:** [Visit Website](https://danielopezpiepoli.github.io/anna-financial-advisory/services.html)
+🔗 **Live Production Deployment:** [Visit Website](https://danielopezpiepoli.github.io/anna-financial-advisory/index.html)
 ---
 
 ## 🏛️ Project Architecture & Purpose
