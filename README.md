@@ -60,3 +60,38 @@ The project emphasizes a fee-only, fiduciary advisory standard (eliminating corp
 ├── terms.html          # Formal engagement framework & terms
 ├── style.css           # Global design system, typography & responsive layouts
 └── main.js             # Client-side i18n translation dictionary & UI engine
+
+
+
+## 🚀 Local Development Setup
+To inspect or run this project locally:
+
+1. Clone the repository:
+
+``
+Bash
+git clone [https://github.com/danielopezpiepoli/anna-advisory.git](https://github.com/danielopezpiepoli/anna-advisory.git)
+cd anna-advisory
+``
+
+2. Serve locally:
+Because the project uses pure vanilla web standards, you can open index.html directly in any modern browser, or run a local server:
+
+``
+Bash
+# Using Python 3
+python -m http.server 8000
+``
+
+Open http://localhost:8000 in your browser.
+
+## 👨‍💻 Author & Architecture
+Daniel López Piepoli
+
+Frontend Developer & Digital Architect | Data Science Enthusiast
+
+📍 Berlin, Germany
+
+✉️ danielopezpiepoli@gmail.com
+
+💼 GitHub Profile
