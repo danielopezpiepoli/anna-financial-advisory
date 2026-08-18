@@ -1031,4 +1031,18 @@ document.addEventListener('DOMContentLoaded', () => {
       badge.classList.toggle('active');
     });
   }
+
+   // Efecto compacto del Header al hacer scroll
+  const header = document.querySelector('.header');
+  if (header) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    }, { passive: true });
+  }
+
+
 });
