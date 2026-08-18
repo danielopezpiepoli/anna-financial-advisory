@@ -94,7 +94,7 @@ To inspect or run this project locally:
 ## 👨‍💻 Author & Architecture
 
 **Daniel López Piepoli**  
-* Frontend Developer & Digital Architect | Data Science Enthusiast  
+* Frontend Developer & Digital Architect | Data Science
 * 📍 Berlin, Germany  
 * ✉️ [danielopezpiepoli@gmail.com](mailto:danielopezpiepoli@gmail.com)  
 * 💼 [GitHub Profile](https://github.com/danielopezpiepoli)
