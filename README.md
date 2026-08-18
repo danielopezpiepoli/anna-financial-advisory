@@ -72,7 +72,7 @@ To inspect or run this project locally:
 Bash
 git clone [https://github.com/danielopezpiepoli/anna-advisory.git](https://github.com/danielopezpiepoli/anna-advisory.git)
 cd anna-advisory
-```
+
 
 2. Serve locally:
 Because the project uses pure vanilla web standards, you can open index.html directly in any modern browser, or run a local server:
@@ -81,7 +81,7 @@ Because the project uses pure vanilla web standards, you can open index.html dir
 Bash
 # Using Python 3
 python -m http.server 8000
-```
+
 
 Open http://localhost:8000 in your browser.
 
