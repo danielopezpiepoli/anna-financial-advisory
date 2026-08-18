@@ -1,9 +1,15 @@
 # Anna Advisory — Independent Cross-Border Wealth Management
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![i18n](https://img.shields.io/badge/i18n-4%20Languages-B85D38?style=for-the-badge)
+![Compliance](https://img.shields.io/badge/Compliance-GDPR%20%2F%20DSGVO-5C6B5E?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Production%20Ready-2ea44f?style=for-the-badge)
+
 > A bespoke, multi-page digital platform engineered for private wealth preservation, family relocation finance, and European regulatory compliance (Berlin • Kyiv).
 
-🔗 **Live Production Deployment:** [Visit Website](https://danielopezpiepoli.github.io/anna-advisory/) *(actualiza con tu enlace real si aplica)*
-
+🔗 **Live Production Deployment:** [Visit Website](https://danielopezpiepoli.github.io/anna-advisory/)
 ---
 
 ## 🏛️ Project Architecture & Purpose
