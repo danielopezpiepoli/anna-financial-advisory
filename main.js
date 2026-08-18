@@ -977,12 +977,15 @@ document.addEventListener('DOMContentLoaded', () => {
     select.value = savedLang;
     changeLanguage(savedLang);
 
-    select.addEventListener('change', (e) => {
+    const handleLangChange = (e) => {
       changeLanguage(e.target.value);
-    });
+    };
+
+    select.addEventListener('change', handleLangChange);
+    select.addEventListener('input', handleLangChange);
   }
 
-  // Menú Hamburguesa Móvil (Apertura, Cierre y Navegación Fluida)
+  // Menú Hamburguesa Móvil
   const menuBtn = document.getElementById('mobile-menu-btn');
   const mobileNav = document.getElementById('mobile-nav');
   const mobileLinks = document.querySelectorAll('.mobile-nav-links a');
@@ -1004,11 +1007,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     menuBtn.addEventListener('click', toggleMenu);
 
-    // Cierre limpio al hacer clic en cualquier enlace del menú móvil
     mobileLinks.forEach((link) => {
       link.addEventListener('click', () => {
         closeMenu();
       });
+    });
+  }
+
+  // Interacción Tap/Clic para Retrato y Badge en Móvil
+  const portrait = document.querySelector('.portrait-wrapper');
+  if (portrait) {
+    portrait.addEventListener('click', (e) => {
+      // Si se hace clic en el badge flotante, no alternar la tarjeta completa
+      if (e.target.closest('.floating-badge')) return;
+      portrait.classList.toggle('active');
+    });
+  }
+
+  const badge = document.querySelector('.floating-badge');
+  if (badge) {
+    badge.addEventListener('click', (e) => {
+      e.stopPropagation(); // Evita que dispare el evento del retrato
+      badge.classList.toggle('active');
     });
   }
 });

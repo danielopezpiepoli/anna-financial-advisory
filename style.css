@@ -98,7 +98,15 @@ body {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
+  position: relative;
+  z-index: 105; /* Asegura que toda el área de acciones esté por encima */
+}
+
+.lang-picker {
+  position: relative;
+  display: inline-block;
+  z-index: 106; /* Garantiza que el select reciba el tap prioritario */
 }
 
 .lang-picker select {
@@ -119,6 +127,9 @@ body {
   background-repeat: no-repeat;
   background-position: right 10px center;
   padding-right: 28px;
+  position: relative;
+  z-index: 107;
+  touch-action: manipulation; /* Respuesta táctil inmediata en móviles */
 }
 
 .lang-picker select:hover,
@@ -142,10 +153,11 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 8px;
+  padding: 6px;
   flex-direction: column;
   gap: 5px;
-  z-index: 110;
+  z-index: 108;
+  touch-action: manipulation;
 }
 
 .hamburger-line {
@@ -278,6 +290,8 @@ body {
   max-width: 380px;
   border-radius: 24px;
   overflow: visible;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .portrait-img {
@@ -288,40 +302,47 @@ body {
   box-shadow: 0 20px 40px -15px rgba(26, 29, 32, 0.12);
   border: 1px solid var(--border-soft);
   display: block;
+  transition: transform 0.4s ease, filter 0.4s ease;
 }
 
 .portrait-overlay {
-  display: none;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  background: rgba(251, 249, 245, 0.94);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid var(--border-soft);
+  padding: 40px 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(8px);
+  z-index: 2;
+}
+
+/* Efecto cuando está activo (Por Tap/Clic o Hover) */
+.portrait-wrapper.active .portrait-img {
+  filter: blur(2px) brightness(0.95);
+  transform: scale(1.02);
+}
+
+.portrait-wrapper.active .portrait-overlay {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 /* Desktop Hover Effects Only */
 @media (hover: hover) and (pointer: fine) {
-  .portrait-wrapper {
-    cursor: pointer;
-  }
-
-  .portrait-overlay {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 480px;
-    border-radius: 24px;
-    background: rgba(251, 249, 245, 0.92);
-    backdrop-filter: blur(2px);
-    border: 1px solid var(--border-soft);
-    padding: 40px 32px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
-    transform: translateY(8px);
-  }
-
   .portrait-wrapper:hover .portrait-img {
     filter: blur(2px) brightness(0.95);
     transform: scale(1.02);
@@ -378,6 +399,7 @@ body {
   left: -16px;
   background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid var(--border-soft);
   border-radius: 9999px;
   padding: 8px 18px;
@@ -391,13 +413,15 @@ body {
   justify-content: center;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   user-select: none;
+  z-index: 3;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .floating-badge:hover,
-.floating-badge:focus {
+.floating-badge:focus,
+.floating-badge.active {
   border-color: var(--accent-terracotta);
   box-shadow: 0 12px 28px -5px rgba(184, 93, 56, 0.18);
-  transform: translateY(-2px);
 }
 
 .badge-layer {
@@ -435,6 +459,17 @@ body {
   opacity: 0;
   transform: translateY(16px);
   pointer-events: none;
+}
+
+/* Estado activo para el badge (en tap móvil) */
+.floating-badge.active .badge-default {
+  opacity: 0;
+  transform: translateY(-16px);
+}
+
+.floating-badge.active .badge-hover {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .lang-pill {
@@ -1496,7 +1531,6 @@ body {
   }
 }
 
-
 /* ==========================================================================
    PHILOSOPHY.HTML
    ========================================================================== */
@@ -1628,7 +1662,6 @@ body {
   }
 }
 
-
 /* ==========================================================================
    LEGAL PAGES (IMPRESSUM, DATENSCHUTZ, TERMS)
    ========================================================================== */
@@ -1675,7 +1708,6 @@ body {
     padding: 32px 20px;
   }
 }
-
 
 /* ==========================================================================
    FAQ.HTML (ACCORDION & CATEGORIES)
@@ -1732,7 +1764,7 @@ body {
   color: var(--text-main);
   cursor: pointer;
   user-select: none;
-  list-style: none; /* Elimina flecha nativa */
+  list-style: none;
 }
 
 .faq-question::-webkit-details-marker {
@@ -1774,8 +1806,3 @@ body {
     padding: 0 20px 20px 20px;
   }
 }
-
-
-/* ==========================================================================
-   --------.HTML
-   ========================================================================== */
