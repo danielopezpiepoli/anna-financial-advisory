@@ -4,18 +4,15 @@
 
 const translations = {
   en: {
-    /* --------------------------------------------------------------------------
-       GLOBAL: NAVEGACIÓN Y CABECERA
-       -------------------------------------------------------------------------- */
+    /* GLOBAL: NAVEGACIÓN Y CABECERA */
     nav_home: "Home",
     nav_about: "About",
     nav_services: "Services",
     nav_philosophy: "Philosophy",
+    nav_faq: "FAQ",
     nav_contact: "Contact",
 
-    /* --------------------------------------------------------------------------
-       INDEX.HTML (PORTADA)
-       -------------------------------------------------------------------------- */
+    /* INDEX.HTML (PORTADA) */
     hero_pill: "Independent Wealth & Cross-Border Advisory",
     hero_title: "Thoughtful, private financial guidance tailored to <em>your real life.</em>",
     hero_desc: "Navigating cross-border finances, relocations, and wealth structuring shouldn't feel clinical. I provide clear, discreet, and personal counsel across Europe and Eastern markets.",
@@ -44,9 +41,7 @@ const translations = {
     contact_sub: "Preliminary discussions are always confidential and non-binding.",
     contact_btn: "Send Confidential Message",
 
-    /* --------------------------------------------------------------------------
-       SERVICES.HTML
-       -------------------------------------------------------------------------- */
+    /* SERVICES.HTML */
     srv_page_pill: "Practice & Methodology",
     srv_page_title: "Strategic clarity for complex financial realities.",
     srv_page_sub: "Independent, fee-only advisory without third-party commissions. Designed specifically for founders, expatriates, and private families navigating cross-border rules.",
@@ -74,9 +69,7 @@ const translations = {
     srv_cta_title: "Ready to align your financial strategy?",
     srv_cta_desc: "Book a confidential, non-binding introductory session.",
 
-    /* --------------------------------------------------------------------------
-       ABOUT.HTML
-       -------------------------------------------------------------------------- */
+    /* ABOUT.HTML */
     about_page_pill: "Perspective & Identity",
     about_page_title: "Clarity forged in complex realities.",
     about_page_sub: "Financial stewardship is more than calculating figures. It is understanding the human weight of resilience, change, and long-term security.",
@@ -94,9 +87,7 @@ const translations = {
     about_cta_title: "Let’s start with a confidential conversation.",
     about_cta_desc: "Discuss your cross-border circumstances directly and without obligation.",
 
-    /* --------------------------------------------------------------------------
-       CONTACT.HTML
-       -------------------------------------------------------------------------- */
+    /* CONTACT.HTML */
     contact_page_pill: "Private Direct Counsel",
     contact_page_title: "Begin a confidential conversation.",
     contact_page_sub: "Whether you are planning an international relocation, structuring multi-jurisdiction assets, or seeking an independent second opinion.",
@@ -115,17 +106,13 @@ const translations = {
     contact_inperson_note: "In-person consultations by prior appointment only.",
     contact_nda_note: "Strict Non-Disclosure & DSGVO / GDPR Compliant",
 
-    /* --------------------------------------------------------------------------
-       PLACEHOLDERS (CAMPOS DE TEXTO)
-       -------------------------------------------------------------------------- */
+    /* PLACEHOLDERS */
     ph_name: "Your Name",
     ph_email: "Your Email",
     ph_phone: "Phone / WhatsApp (Optional)",
     ph_msg: "Briefly describe what you would like to resolve...",
 
-    /* --------------------------------------------------------------------------
-       GLOBAL: FOOTER & SUBFOOTER
-       -------------------------------------------------------------------------- */
+    /* GLOBAL: FOOTER & SUBFOOTER */
     footer_desc: "Independent cross-border wealth management and private financial counsel across Europe.",
     footer_nav_title: "Navigation",
     footer_office_title: "Berlin Office",
@@ -135,10 +122,7 @@ const translations = {
     footer_terms: "Terms of Engagement",
     footer_note: "Berlin • Kyiv",
 
-    /* --------------------------------------------------------------------------
-       PHILOSOPHY.HTML
-       -------------------------------------------------------------------------- */
-
+    /* PHILOSOPHY.HTML */
     phil_page_pill: "Core Principles & Ethics",
     phil_page_title: "The foundations of independent fiduciary counsel.",
     phil_page_sub: "In a financial industry saturated with product pushing and opaque retrocessions, true advisory requires absolute structural independence.",
@@ -165,12 +149,7 @@ const translations = {
     phil_cta_title: "Experience the clarity of independent counsel.",
     phil_cta_desc: "Schedule a private, non-binding introductory session.",
 
-    /* --------------------------------------------------------------------------
-       LEGAL PAGES (IMPRESSUM, DATENSCHUTZ, TERMS)
-
-       IMPRESSUM.HTML, DATENSCHUTZ.HTML, TERMS.HTML
-       -------------------------------------------------------------------------- */
-
+    /* LEGAL PAGES */
     imp_pill: "Regulatory Compliance",
     imp_title: "Legal Notice (Impressum)",
     imp_sub: "Information pursuant to Section 5 of the German Digital Services Act (Digitale-Dienste-Gesetz - DDG).",
@@ -207,11 +186,7 @@ const translations = {
     terms_s4_t: "4. Applicable Law & Jurisdiction",
     terms_s4_p: "Unless explicitly agreed otherwise in writing, the place of jurisdiction and performance for all contractual obligations is Berlin, Federal Republic of Germany.",
 
-    /* --------------------------------------------------------------------------
-       FAQ.HTML
-       -------------------------------------------------------------------------- */    
-
-    nav_faq: "FAQ",
+    /* FAQ.HTML */
     faq_page_pill: "Clarity & Expectations",
     faq_page_title: "Frequently Asked Questions",
     faq_page_sub: "Clear answers regarding our engagement structure, fee-only compensation, cross-border scope, and confidentiality standards.",
@@ -231,25 +206,24 @@ const translations = {
     faq_q6: "Can consultations be conducted in languages other than German?",
     faq_a6: "Yes. Consultations, documentation reviews, and strategic roadmaps are conducted fluently in English, German, Ukrainian, and Russian.",
     faq_cta_title: "Have a question specific to your situation?",
-    faq_cta_desc: "Reach out directly for a discreet, non-binding initial discussion."
+    faq_cta_desc: "Reach out directly for a discreet, non-binding initial discussion.",
 
-    
-
+    /* FORM AJAX STATUS */
+    status_sending: "Sending confidential inquiry...",
+    status_success: "Thank you. Your message has been securely sent. Anna will get back to you shortly.",
+    status_error: "Unable to send message. Please try again or email contact@anna-advisory.de directly."
   },
 
   de: {
-    /* --------------------------------------------------------------------------
-       GLOBAL: NAVEGACIÓN Y CABECERA
-       -------------------------------------------------------------------------- */
+    /* GLOBAL: NAVEGACIÓN Y CABECERA */
     nav_home: "Startseite",
     nav_about: "Über mich",
     nav_services: "Leistungen",
     nav_philosophy: "Philosophie",
+    nav_faq: "FAQ",
     nav_contact: "Kontakt",
 
-    /* --------------------------------------------------------------------------
-       INDEX.HTML (PORTADA)
-       -------------------------------------------------------------------------- */
+    /* INDEX.HTML (PORTADA) */
     hero_pill: "Unabhängige Vermögens- & grenzüberschreitende Beratung",
     hero_title: "Fundierte, vertrauliche Finanzberatung, angepasst an <em>Ihr Leben.</em>",
     hero_desc: "Grenzüberschreitende Finanzen, Umzüge und Vermögensstrukturierung müssen nicht unpersönlich sein. Ich biete klare, diskrete Beratung in europäischen und osteuropäischen Märkten.",
@@ -278,9 +252,7 @@ const translations = {
     contact_sub: "Erstgespräche sind stets vertraulich und unverbindlich.",
     contact_btn: "Vertrauliche Nachricht senden",
 
-    /* --------------------------------------------------------------------------
-       SERVICES.HTML
-       -------------------------------------------------------------------------- */
+    /* SERVICES.HTML */
     srv_page_pill: "Beratungsfelder & Methodik",
     srv_page_title: "Strategische Klarheit für komplexe Vermögensfragen.",
     srv_page_sub: "Unabhängige Honorarberatung ohne Drittprovisionen. Speziell entwickelt für Unternehmer, Expats und Familien in grenzüberschreitenden Situationen.",
@@ -308,9 +280,7 @@ const translations = {
     srv_cta_title: "Bereit für eine maßgeschneiderte Finanzstrategie?",
     srv_cta_desc: "Vereinbaren Sie ein vertrauliches und unverbindliches Erstgespräch.",
 
-    /* --------------------------------------------------------------------------
-       ABOUT.HTML
-       -------------------------------------------------------------------------- */
+    /* ABOUT.HTML */
     about_page_pill: "Profil & Hintergrund",
     about_page_title: "Klarheit, gewachsen aus realer Erfahrung.",
     about_page_sub: "Finanzberatung ist mehr als das Kalkulieren von Zahlen. Sie erfordert ein tiefes Verständnis für Stabilität, Wandel und persönliche Sicherheit.",
@@ -328,9 +298,7 @@ const translations = {
     about_cta_title: "Lassen Sie uns unverbindlich sprechen.",
     about_cta_desc: "Besprechen Sie Ihre persönliche Situation in einem vertraulichen Rahmen.",
 
-    /* --------------------------------------------------------------------------
-       CONTACT.HTML
-       -------------------------------------------------------------------------- */
+    /* CONTACT.HTML */
     contact_page_pill: "Diskrete Direktberatung",
     contact_page_title: "Starten Sie ein vertrauliches Gespräch.",
     contact_page_sub: "Ob internationale Relocation, grenzüberschreitende Vermögensstrukturierung oder eine unabhängige Zweitmeinung.",
@@ -349,17 +317,13 @@ const translations = {
     contact_inperson_note: "Persönliche Termine nach vorheriger Vereinbarung.",
     contact_nda_note: "Strikte Vertraulichkeit & DSGVO-konform",
 
-    /* --------------------------------------------------------------------------
-       PLACEHOLDERS (CAMPOS DE TEXTO)
-       -------------------------------------------------------------------------- */
+    /* PLACEHOLDERS */
     ph_name: "Ihr Name",
     ph_email: "Ihre E-Mail-Adresse",
     ph_phone: "Telefon / WhatsApp (Optional)",
     ph_msg: "Beschreiben Sie kurz Ihr Anliegen...",
 
-    /* --------------------------------------------------------------------------
-       GLOBAL: FOOTER & SUBFOOTER
-       -------------------------------------------------------------------------- */
+    /* GLOBAL: FOOTER & SUBFOOTER */
     footer_desc: "Unabhängiges grenzüberschreitendes Vermögensmanagement und diskrete Finanzberatung in Europa.",
     footer_nav_title: "Navigation",
     footer_office_title: "Kanzlei Berlin",
@@ -369,10 +333,7 @@ const translations = {
     footer_terms: "AGB",
     footer_note: "Berlin • Kyjiw",
 
-    /* --------------------------------------------------------------------------
-       PHILOSOPHY.HTML
-       -------------------------------------------------------------------------- */
-
+    /* PHILOSOPHY.HTML */
     phil_page_pill: "Prinzipien & Ethik",
     phil_page_title: "Die Grundlagen unabhängiger Beratung.",
     phil_page_sub: "In einer Finanzbranche voller Produktverkauf und versteckter Provisionen erfordert echte Beratung absolute strukturelle Unabhängigkeit.",
@@ -399,12 +360,7 @@ const translations = {
     phil_cta_title: "Erleben Sie echte, unabhängige Beratung.",
     phil_cta_desc: "Vereinbaren Sie ein vertrauliches und unverbindliches Erstgespräch.",
 
-    /* --------------------------------------------------------------------------
-       LEGAL PAGES (IMPRESSUM, DATENSCHUTZ, TERMS)
-
-       IMPRESSUM.HTML, DATENSCHUTZ.HTML, TERMS.HTML
-       -------------------------------------------------------------------------- */
-
+    /* LEGAL PAGES */
     imp_pill: "Rechtliche Angaben",
     imp_title: "Impressum",
     imp_sub: "Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG).",
@@ -441,11 +397,7 @@ const translations = {
     terms_s4_t: "4. Anwendbares Recht & Gerichtsstand",
     terms_s4_p: "Es gilt das Recht der Bundesrepublik Deutschland. Gerichtsstand und Erfüllungsort ist Berlin.",
 
-    /* --------------------------------------------------------------------------
-       FAQ.HTML
-       -------------------------------------------------------------------------- */
-
-    nav_faq: "FAQ",
+    /* FAQ.HTML */
     faq_page_pill: "Klarheit & Orientierung",
     faq_page_title: "Häufig gestellte Fragen (FAQ)",
     faq_page_sub: "Klare Antworten zu unserem Beratungsmodell, Honorarstrukturen, grenzüberschreitenden Leistungen und Vertraulichkeitsstandards.",
@@ -465,24 +417,24 @@ const translations = {
     faq_q6: "In welchen Sprachen können Gespräche geführt werden?",
     faq_a6: "Beratungen und Dokumentenanalysen erfolgen fließend auf Deutsch, Englisch, Ukrainisch und Russisch.",
     faq_cta_title: "Haben Sie eine spezifische Frage zu Ihrer Situation?",
-    faq_cta_desc: "Kontaktieren Sie mich für ein vertrauliches und unverbindliches Gespräch."
+    faq_cta_desc: "Kontaktieren Sie mich für ein vertrauliches und unverbindliches Gespräch.",
 
-
+    /* FORM AJAX STATUS */
+    status_sending: "Vertrauliche Anfrage wird übermittelt...",
+    status_success: "Vielen Dank. Ihre Nachricht wurde sicher übertragen. Anna wird sich zeitnah bei Ihnen melden.",
+    status_error: "Übertragung fehlgeschlagen. Bitte versuchen Sie es erneut oder schreiben Sie an contact@anna-advisory.de."
   },
 
   uk: {
-    /* --------------------------------------------------------------------------
-       GLOBAL: NAVEGACIÓN Y CABECERA
-       -------------------------------------------------------------------------- */
+    /* GLOBAL: NAVEGACIÓN Y CABECERA */
     nav_home: "Головна",
     nav_about: "Про мене",
     nav_services: "Послуги",
     nav_philosophy: "Принципи",
+    nav_faq: "Часті питання",
     nav_contact: "Контакти",
 
-    /* --------------------------------------------------------------------------
-       INDEX.HTML (PORTADA)
-       -------------------------------------------------------------------------- */
+    /* INDEX.HTML (PORTADA) */
     hero_pill: "Незалежний фінансовий та транскордонний консалтинг",
     hero_title: "Зважені, приватні фінансові рішення для <em>вашого реального життя.</em>",
     hero_desc: "Управління міжнародними активами, релокація та податкове планування не мають бути бюрократичними. Я забезпечую чіткий, конфіденційний та персональний супровід.",
@@ -511,9 +463,7 @@ const translations = {
     contact_sub: "Попередні консультації завжди конфіденційні та ні до чого не зобов'язують.",
     contact_btn: "Надіслати повідомлення",
 
-    /* --------------------------------------------------------------------------
-       SERVICES.HTML
-       -------------------------------------------------------------------------- */
+    /* SERVICES.HTML */
     srv_page_pill: "Практика та методологія",
     srv_page_title: "Стратегічна чіткість для складних фінансових завдань.",
     srv_page_sub: "Незалежний консалтинг на основі фіксованої винагороди, без прихованих комісій. Для підприємців, експатів та міжнародних родин.",
@@ -541,9 +491,7 @@ const translations = {
     srv_cta_title: "Готові впорядкувати власні фінанси?",
     srv_cta_desc: "Замовте конфіденційну ознайомчу консультацію.",
 
-    /* --------------------------------------------------------------------------
-       ABOUT.HTML
-       -------------------------------------------------------------------------- */
+    /* ABOUT.HTML */
     about_page_pill: "Досвід та принципи",
     about_page_title: "Чіткість, загартована реальним досвідом.",
     about_page_sub: "Управління капіталом — це більше, ніж цифри у звітах. Це розуміння справжньої ціни стабільності, адаптації та захисту майбутнього.",
@@ -561,9 +509,7 @@ const translations = {
     about_cta_title: "Розпочнемо з конфіденційної розмови.",
     about_cta_desc: "Обговоріть вашу транскордонну ситуацію без жодних зобов'язань.",
 
-    /* --------------------------------------------------------------------------
-       CONTACT.HTML
-       -------------------------------------------------------------------------- */
+    /* CONTACT.HTML */
     contact_page_pill: "Приватний прямий діалог",
     contact_page_title: "Розпочніть конфіденційну розмову.",
     contact_page_sub: "Незалежно від того, чи плануєте ви міжнародний переїзд, структурування активів у кількох юрисдикціях, чи шукаєте незалежний аудит.",
@@ -582,17 +528,13 @@ const translations = {
     contact_inperson_note: "Особисті зустрічі виключно за попереднім записом.",
     contact_nda_note: "Сувора конфіденційність та відповідність стандартам GDPR",
 
-    /* --------------------------------------------------------------------------
-       PLACEHOLDERS (CAMPOS DE TEXTO)
-       -------------------------------------------------------------------------- */
+    /* PLACEHOLDERS */
     ph_name: "Ваше ім'я",
     ph_email: "Ваш Email",
     ph_phone: "Телефон / WhatsApp (Необов'язково)",
     ph_msg: "Коротко опишіть ваше запитання...",
 
-    /* --------------------------------------------------------------------------
-       GLOBAL: FOOTER & SUBFOOTER
-       -------------------------------------------------------------------------- */
+    /* GLOBAL: FOOTER & SUBFOOTER */
     footer_desc: "Незалежне управління міжнародними активами та приватний фінансовий супровід у Європі.",
     footer_nav_title: "Навігація",
     footer_office_title: "Офіс у Берліні",
@@ -602,10 +544,7 @@ const translations = {
     footer_terms: "Умови співпраці",
     footer_note: "Берлін • Київ",
 
-    /* --------------------------------------------------------------------------
-       PHILOSOPHY.HTML
-       -------------------------------------------------------------------------- */
-
+    /* PHILOSOPHY.HTML */
     phil_page_pill: "Принципи та стандарти",
     phil_page_title: "Основи незалежного фінансового консалтингу.",
     phil_page_sub: "В індустрії, перевантаженій нав'язуванням продуктів і прихованими комісіями, справжня допомога можлива лише за повної незалежності.",
@@ -632,13 +571,7 @@ const translations = {
     phil_cta_title: "Оцініть переваги незалежного партнерства.",
     phil_cta_desc: "Замовте конфіденційну ознайомчу консультацію.",
 
-
-    /* --------------------------------------------------------------------------
-       LEGAL PAGES (IMPRESSUM, DATENSCHUTZ, TERMS)
-
-       IMPRESSUM.HTML, DATENSCHUTZ.HTML, TERMS.HTML
-       -------------------------------------------------------------------------- */
-
+    /* LEGAL PAGES */
     imp_pill: "Правові норми",
     imp_title: "Юридична інформація (Impressum)",
     imp_sub: "Інформація відповідно до § 5 Закону Німеччини про цифрові послуги (DDG).",
@@ -675,11 +608,7 @@ const translations = {
     terms_s4_t: "4. Юрисдикція",
     terms_s4_p: "Застосовується законодавство Федеративної Республіки Німеччина. Місце юрисдикції — Берлін.",
 
-    /* --------------------------------------------------------------------------
-       FAQ.HTML
-       -------------------------------------------------------------------------- */
-
-    nav_faq: "Часті питання",
+    /* FAQ.HTML */
     faq_page_pill: "Прозорість та відповіді",
     faq_page_title: "Часті питання (FAQ)",
     faq_page_sub: "Відповіді щодо формату співпраці, фіксованої оплати, транскордонних послуг та стандартів конфіденційності.",
@@ -699,23 +628,24 @@ const translations = {
     faq_q6: "Якими мовами проводяться консультації?",
     faq_a6: "Консультації та робота з документами ведуться українською, німецькою, англійською та російською мовами.",
     faq_cta_title: "Маєте питання щодо вашої ситуації?",
-    faq_cta_desc: "Звертайтеся безпосередньо для конфіденційного обговорення."
+    faq_cta_desc: "Звертайтеся безпосередньо для конфіденційного обговорення.",
 
+    /* FORM AJAX STATUS */
+    status_sending: "Надсилання конфіденційного запиту...",
+    status_success: "Дякуємо. Ваше повідомлення успішно надіслано. Анна зв'яжеться з вами найближчим часом.",
+    status_error: "Не вдалося надіслати повідомлення. Спробуйте ще раз або напишіть на contact@anna-advisory.de."
   },
 
   ru: {
-    /* --------------------------------------------------------------------------
-       GLOBAL: NAVEGACIÓN Y CABECERA
-       -------------------------------------------------------------------------- */
+    /* GLOBAL: NAVEGACIÓN Y CABECERA */
     nav_home: "Главная",
     nav_about: "Обо мне",
     nav_services: "Услуги",
     nav_philosophy: "Принципы",
+    nav_faq: "Частые вопросы",
     nav_contact: "Контакты",
 
-    /* --------------------------------------------------------------------------
-       INDEX.HTML (PORTADA)
-       -------------------------------------------------------------------------- */
+    /* INDEX.HTML (PORTADA) */
     hero_pill: "Независимый финансовый и трансграничный консалтинг",
     hero_title: "Взвешенные, приватные финансовые решения для <em>вашей жизни.</em>",
     hero_desc: "Управление международными активами, релокация и налоговое структурирование не должны быть формальными. Я обеспечиваю четкое, конфиденциальное и индивидуальное консультирование.",
@@ -744,9 +674,7 @@ const translations = {
     contact_sub: "Предварительные консультации всегда конфиденциальны и ни к чему не обязывают.",
     contact_btn: "Отправить сообщение",
 
-    /* --------------------------------------------------------------------------
-       SERVICES.HTML
-       -------------------------------------------------------------------------- */
+    /* SERVICES.HTML */
     srv_page_pill: "Практика и методология",
     srv_page_title: "Стратегическая четкость для сложных финансовых задач.",
     srv_page_sub: "Независимый консалтинг на основе гонорара, без скрытых комиссий. Для фаундеров, экспатов и международных семей.",
@@ -774,9 +702,7 @@ const translations = {
     srv_cta_title: "Готовы выстроить устойчивую финансовую стратегию?",
     srv_cta_desc: "Запросите конфиденциальную ознакомительную консультацию.",
 
-    /* --------------------------------------------------------------------------
-       ABOUT.HTML
-       -------------------------------------------------------------------------- */
+    /* ABOUT.HTML */
     about_page_pill: "Опыт и принципы",
     about_page_title: "Четкость, основанная на реальном опыте.",
     about_page_sub: "Управление капиталом — это не просто финансовые расчеты. Это понимание ценности стабильности, адаптации и долгосрочной безопасности.",
@@ -794,9 +720,7 @@ const translations = {
     about_cta_title: "Начнем с конфиденциального диалога.",
     about_cta_desc: "Обсудите вашу финансовую ситуацию напрямую и без обязательств.",
 
-    /* --------------------------------------------------------------------------
-       CONTACT.HTML
-       -------------------------------------------------------------------------- */
+    /* CONTACT.HTML */
     contact_page_pill: "Прямой конфиденциальный диалог",
     contact_page_title: "Начните конфиденциальный разговор.",
     contact_page_sub: "Планируете ли вы международный переезд, структурирование активов в нескольких юрисдикциях или ищете независимое второе мнение.",
@@ -815,17 +739,13 @@ const translations = {
     contact_inperson_note: "Личные встречи строго по предварительной записи.",
     contact_nda_note: "Строгая конфиденциальность и соответствие GDPR",
 
-    /* --------------------------------------------------------------------------
-       PLACEHOLDERS (CAMPOS DE TEXTO)
-       -------------------------------------------------------------------------- */
+    /* PLACEHOLDERS */
     ph_name: "Ваше имя",
     ph_email: "Ваш Email",
     ph_phone: "Телефон / WhatsApp (Необязательно)",
     ph_msg: "Краткое описание вашей ситуации...",
 
-    /* --------------------------------------------------------------------------
-       GLOBAL: FOOTER & SUBFOOTER
-       -------------------------------------------------------------------------- */
+    /* GLOBAL: FOOTER & SUBFOOTER */
     footer_desc: "Независимое трансграничное управление активами и частный финансовый консалтинг в Европе.",
     footer_nav_title: "Навигация",
     footer_office_title: "Офис в Берлине",
@@ -835,10 +755,7 @@ const translations = {
     footer_terms: "Условия работы",
     footer_note: "Берлин • Киев",
 
-    /* --------------------------------------------------------------------------
-       PHILOSOPHY.HTML
-       -------------------------------------------------------------------------- */
-
+    /* PHILOSOPHY.HTML */
     phil_page_pill: "Принципы и этика",
     phil_page_title: "Основы независимого финансового консалтинга.",
     phil_page_sub: "В индустрии, переполненной продажей продуктов и скрытыми комиссиями, надежное партнерство требует абсолютной независимости.",
@@ -865,13 +782,7 @@ const translations = {
     phil_cta_title: "Оцените ясность независимого консалтинга.",
     phil_cta_desc: "Запросите конфиденциальную ознакомительную консультацию.",
 
-
-    /* --------------------------------------------------------------------------
-       LEGAL PAGES (IMPRESSUM, DATENSCHUTZ, TERMS)
-
-       IMPRESSUM.HTML, DATENSCHUTZ.HTML, TERMS.HTML
-       -------------------------------------------------------------------------- */
-
+    /* LEGAL PAGES */
     imp_pill: "Правовые нормы",
     imp_title: "Выходные данные (Impressum)",
     imp_sub: "Информация в соответствии с § 5 Закона Германии о цифровых услугах (DDG).",
@@ -908,11 +819,7 @@ const translations = {
     terms_s4_t: "4. Применимое право и юрисдикция",
     terms_s4_p: "Применяется право Федеративной Республики Германия. Место юрисдикции — Берлин.",
 
-    /* --------------------------------------------------------------------------
-       FAQ.HTML
-       -------------------------------------------------------------------------- */
-
-    nav_faq: "Частые вопросы",
+    /* FAQ.HTML */
     faq_page_pill: "Прозрачность и ответы",
     faq_page_title: "Частые вопросы (FAQ)",
     faq_page_sub: "Ответы о формате сотрудничества, гонорарной модели, трансграничном сопровождении и защите данных.",
@@ -932,7 +839,12 @@ const translations = {
     faq_q6: "На каких языках проводятся консультации?",
     faq_a6: "Консультации и анализ документов проводятся на английском, немецком, украинском и русском языках.",
     faq_cta_title: "Есть вопрос по вашей ситуации?",
-    faq_cta_desc: "Свяжитесь напрямую для конфиденциального обсуждения."
+    faq_cta_desc: "Свяжитесь напрямую для конфиденциального обсуждения.",
+
+    /* FORM AJAX STATUS */
+    status_sending: "Отправка конфиденциального запроса...",
+    status_success: "Спасибо. Ваше сообщение успешно отправлено. Анна свяжется с вами в ближайшее время.",
+    status_error: "Не удалось отправить сообщение. Попробуйте снова или напишите на contact@anna-advisory.de."
   }
 };
 
@@ -943,7 +855,7 @@ const translations = {
 function changeLanguage(lang) {
   if (!translations[lang]) return;
 
-  // 1. Actualizar textos normales con data-i18n
+  // 1. Textos regulares
   document.querySelectorAll('[data-i18n]').forEach((el) => {
     const key = el.getAttribute('data-i18n');
     if (translations[lang][key]) {
@@ -951,7 +863,7 @@ function changeLanguage(lang) {
     }
   });
 
-  // 2. Actualizar placeholders con data-i18n-ph
+  // 2. Placeholders
   document.querySelectorAll('[data-i18n-ph]').forEach((el) => {
     const key = el.getAttribute('data-i18n-ph');
     if (translations[lang][key]) {
@@ -959,7 +871,7 @@ function changeLanguage(lang) {
     }
   });
 
-  // 3. Guardar estado y atributo lang del documento HTML
+  // 3. Persistencia
   document.documentElement.lang = lang;
   localStorage.setItem('anna_lang', lang);
 }
@@ -969,7 +881,7 @@ function changeLanguage(lang) {
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Selector de idioma persistente
+  // Selector de idioma persistente (Desktop & Mobile)
   const select = document.getElementById('lang-select');
   const savedLang = localStorage.getItem('anna_lang') || 'en';
 
@@ -988,7 +900,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Menú Hamburguesa Móvil
   const menuBtn = document.getElementById('mobile-menu-btn');
   const mobileNav = document.getElementById('mobile-nav');
-  const mobileLinks = document.querySelectorAll('.mobile-nav-links a');
+  const mobileLinks = document.querySelectorAll('.mobile-nav-links a, .mobile-cta a');
 
   if (menuBtn && mobileNav) {
     const closeMenu = () => {
@@ -1008,17 +920,24 @@ document.addEventListener('DOMContentLoaded', () => {
     menuBtn.addEventListener('click', toggleMenu);
 
     mobileLinks.forEach((link) => {
-      link.addEventListener('click', () => {
-        closeMenu();
-      });
+      link.addEventListener('click', closeMenu);
     });
+
+    // Cerrar menú si se hace tap en el logo
+    const brandLogo = document.querySelector('.header .brand');
+    if (brandLogo) {
+      brandLogo.addEventListener('click', () => {
+        if (menuBtn.classList.contains('active')) {
+          closeMenu();
+        }
+      });
+    }
   }
 
   // Interacción Tap/Clic para Retrato y Badge en Móvil
   const portrait = document.querySelector('.portrait-wrapper');
   if (portrait) {
     portrait.addEventListener('click', (e) => {
-      // Si se hace clic en el badge flotante, no alternar la tarjeta completa
       if (e.target.closest('.floating-badge')) return;
       portrait.classList.toggle('active');
     });
@@ -1027,12 +946,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const badge = document.querySelector('.floating-badge');
   if (badge) {
     badge.addEventListener('click', (e) => {
-      e.stopPropagation(); // Evita que dispare el evento del retrato
+      e.stopPropagation();
       badge.classList.toggle('active');
     });
   }
 
-   // Efecto compacto del Header al hacer scroll
+  // Efecto compacto del Header al hacer scroll
   const header = document.querySelector('.header');
   if (header) {
     window.addEventListener('scroll', () => {
@@ -1044,5 +963,55 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
+  // Manejo de envío AJAX para Web3Forms (Index y Contact)
+  const ajaxForms = document.querySelectorAll('.web3-ajax-form');
+  ajaxForms.forEach((form) => {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const currentLang = localStorage.getItem('anna_lang') || 'en';
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const statusBox = form.querySelector('.form-status-msg');
 
+      if (!statusBox) return;
+
+      // Estado enviando
+      const originalBtnText = submitBtn.innerText;
+      submitBtn.disabled = true;
+      submitBtn.innerText = translations[currentLang]?.status_sending || 'Sending...';
+      statusBox.style.display = 'block';
+      statusBox.style.color = 'var(--text-muted)';
+      statusBox.innerText = translations[currentLang]?.status_sending || 'Sending...';
+
+      const formData = new FormData(form);
+      const jsonObject = Object.fromEntries(formData.entries());
+
+      try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(jsonObject)
+        });
+
+        const result = await response.json();
+
+        if (response.status === 200 && result.success) {
+          statusBox.style.color = 'var(--accent-sage)';
+          statusBox.innerText = translations[currentLang]?.status_success || 'Message sent successfully.';
+          form.reset();
+        } else {
+          statusBox.style.color = 'var(--accent-terracotta)';
+          statusBox.innerText = result.message || (translations[currentLang]?.status_error || 'Error sending message.');
+        }
+      } catch (err) {
+        statusBox.style.color = 'var(--accent-terracotta)';
+        statusBox.innerText = translations[currentLang]?.status_error || 'Network error. Please try again.';
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerText = originalBtnText;
+      }
+    });
+  });
 });

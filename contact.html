@@ -84,16 +84,22 @@
         <h2 class="form-card-title" data-i18n="contact_form_title">Direct Inquiry</h2>
         <p class="form-card-sub" data-i18n="contact_form_sub">All inquiries are received directly by Anna under strict professional confidentiality.</p>
 
-        <form class="inquiry-form" onsubmit="event.preventDefault();">
+        <!-- Web3Forms Integration -->
+        <form action="https://api.web3forms.com/submit" method="POST" class="inquiry-form web3-ajax-form">
+          <input type="hidden" name="access_key" value="TU_ACCESS_KEY_AQUI" />
+          <input type="hidden" name="subject" value="New Direct Inquiry - Anna Advisory" />
+          <input type="hidden" name="from_name" value="Anna Advisory Contact Page" />
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+
           <div class="form-row">
-            <input type="text" placeholder="Your Name" required data-i18n-ph="ph_name" />
-            <input type="email" placeholder="Your Email" required data-i18n-ph="ph_email" />
+            <input type="text" name="name" placeholder="Your Name" required data-i18n-ph="ph_name" />
+            <input type="email" name="email" placeholder="Your Email" required data-i18n-ph="ph_email" />
           </div>
 
           <div class="form-row">
-            <input type="tel" placeholder="Phone / WhatsApp (Optional)" data-i18n-ph="ph_phone" />
+            <input type="tel" name="phone" placeholder="Phone / WhatsApp (Optional)" data-i18n-ph="ph_phone" />
             <div class="custom-select-wrap">
-              <select id="inquiry-area" required>
+              <select id="inquiry-area" name="area_of_focus" required>
                 <option value="" disabled selected data-i18n="opt_placeholder">Select Area of Focus...</option>
                 <option value="cross-border" data-i18n="opt_cross_border">Cross-Border Asset Planning</option>
                 <option value="wealth-preservation" data-i18n="opt_wealth_preservation">Private Wealth Preservation</option>
@@ -103,9 +109,13 @@
             </div>
           </div>
 
-          <textarea rows="3" placeholder="Briefly describe what you would like to resolve..." required data-i18n-ph="ph_msg"></textarea>
+          <textarea name="message" rows="3" placeholder="Briefly describe what you would like to resolve..." required data-i18n-ph="ph_msg"></textarea>
 
           <button type="submit" class="btn btn-primary" data-i18n="contact_btn_submit">Send Confidential Message</button>
+          
+          <!-- Contenedor para mensajes de estado AJAX -->
+          <div class="form-status-msg" style="display: none; font-size: 0.9rem; margin-top: 10px; font-weight: 500;"></div>
+          
           <p class="form-disclaimer" data-i18n="contact_disclaimer">Preliminary exchanges are non-binding and protected under strict European confidentiality standards.</p>
         </form>
       </div>

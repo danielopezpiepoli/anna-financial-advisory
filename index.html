@@ -66,60 +66,60 @@
     </div>
   </header>
 
-  <!-- Hero Section with Portrait -->
-  <section class="container hero">
-    <div class="hero-content">
-      <span class="pill" data-i18n="hero_pill">Independent Wealth & Cross-Border Advisory</span>
-      <h1 class="hero-title" data-i18n="hero_title">
-        Thoughtful, private financial guidance tailored to <em>your real life.</em>
-      </h1>
-      <p class="hero-desc" data-i18n="hero_desc">
-        Navigating cross-border finances, relocations, and wealth structuring shouldn't feel clinical. I provide clear, discreet, and personal counsel across Europe and Eastern markets.
-      </p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary" data-i18n="hero_btn_main">Book a Confidential Call</a>
-        <a href="about.html" class="btn btn-link" data-i18n="hero_btn_secondary">Meet Anna &rarr;</a>
-      </div>
-    </div>
-
-    <!-- Hero Portrait Media (Editorial Illustration Placeholder) -->
-    <div class="hero-media">
-      <div class="portrait-wrapper">
-        <img 
-          src="assets/images/anna-ai.png"
-          alt="Anna - Financial Advisor" 
-          class="portrait-img" 
-        />
-        <!-- Velo y saludo interactivo -->
-        <div class="portrait-overlay">
-          <div class="overlay-quote-mark">“</div>
-          <p class="overlay-text"           data-i18n="portrait_greeting">
-            Finance should empower your vision, not complicate your life. Let’s build something lasting together.
-          </p>
-          <span class="overlay-signature">— Anna</span>
+  <main>
+    <!-- Hero Section with Portrait -->
+    <section class="container hero">
+      <div class="hero-content">
+        <span class="pill" data-i18n="hero_pill">Independent Wealth & Cross-Border Advisory</span>
+        <h1 class="hero-title" data-i18n="hero_title">
+          Thoughtful, private financial guidance tailored to <em>your real life.</em>
+        </h1>
+        <p class="hero-desc" data-i18n="hero_desc">
+          Navigating cross-border finances, relocations, and wealth structuring shouldn't feel clinical. I provide clear, discreet, and personal counsel across Europe and Eastern markets.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary" data-i18n="hero_btn_main">Book a Confidential Call</a>
+          <a href="about.html" class="btn btn-link" data-i18n="hero_btn_secondary">Meet Anna &rarr;</a>
         </div>
-
-        <!-- Píldora interactiva de idiomas -->
-        <div class="floating-badge" tabindex="0">
-          <div class="badge-layer badge-default">
-            <span class="pulse-dot"></span>
-            <span class="badge-text" data-i18n="bio_badge">Consulting in 4 Languages</span>
-          </div>
-          <div class="badge-layer badge-hover">
-            <span class="lang-pill">EN</span>
-            <span class="lang-pill">DE</span>
-            <span class="lang-pill">UK</span>
-            <span class="lang-pill">RU</span>
-          </div>
-        </div>      
       </div>
-    </div>
-  </section>
+
+      <!-- Hero Portrait Media -->
+      <div class="hero-media">
+        <div class="portrait-wrapper">
+          <img 
+            src="assets/images/anna-ai.png" 
+            alt="Anna - Financial Advisor" 
+            class="portrait-img" 
+          />
+          <!-- Velo y saludo interactivo -->
+          <div class="portrait-overlay">
+            <div class="overlay-quote-mark">“</div>
+            <p class="overlay-text" data-i18n="portrait_greeting">
+              Finance should empower your vision, not complicate your life. Let’s build something lasting together.
+            </p>
+            <span class="overlay-signature">— Anna</span>
+          </div>
+
+          <!-- Píldora interactiva de idiomas -->
+          <div class="floating-badge" tabindex="0">
+            <div class="badge-layer badge-default">
+              <span class="pulse-dot"></span>
+              <span class="badge-text" data-i18n="bio_badge">Consulting in 4 Languages</span>
+            </div>
+            <div class="badge-layer badge-hover">
+              <span class="lang-pill">EN</span>
+              <span class="lang-pill">DE</span>
+              <span class="lang-pill">UK</span>
+              <span class="lang-pill">RU</span>
+            </div>
+          </div>      
+        </div>
+      </div>
+    </section>
 
     <!-- Personal Intro / About Mini -->
     <section id="about" class="container bio-section">
       <div class="bio-card">
-        <!--A "redondeada"--> 
         <div class="bio-visual">
           <div class="avatar-placeholder">
             <img 
@@ -203,27 +203,27 @@
         <h2 data-i18n="contact_heading">Let’s discuss your financial roadmap.</h2>
         <p data-i18n="contact_sub">Preliminary discussions are always confidential and non-binding.</p>
         
-        <form class="contact-form" onsubmit="event.preventDefault();">
+        <!-- Web3Forms Integration -->
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form web3-ajax-form">
+          <input type="hidden" name="access_key" value="TU_ACCESS_KEY_AQUI" />
+          <input type="hidden" name="subject" value="New Home Inquiry - Anna Advisory" />
+          <input type="hidden" name="from_name" value="Anna Advisory Home Page" />
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+
           <div class="form-row">
-            <input type="text" placeholder="Your Name" required data-i18n-ph="ph_name" />
-            <input type="email" placeholder="Your Email" required data-i18n-ph="ph_email" />
+            <input type="text" name="name" placeholder="Your Name" required data-i18n-ph="ph_name" />
+            <input type="email" name="email" placeholder="Your Email" required data-i18n-ph="ph_email" />
           </div>
-          <textarea rows="3" placeholder="Briefly describe what you would like to resolve..." required data-i18n-ph="ph_msg"></textarea>
+          <textarea name="message" rows="3" placeholder="Briefly describe what you would like to resolve..." required data-i18n-ph="ph_msg"></textarea>
+          
           <button type="submit" class="btn btn-primary" data-i18n="contact_btn">Send Confidential Message</button>
+          
+          <!-- Contenedor para mensajes de estado AJAX -->
+          <div class="form-status-msg" style="display: none; font-size: 0.9rem; margin-top: 10px; font-weight: 500;"></div>
         </form>
       </div>
     </section>
   </main>
-
-  <!-- Footer -->
-  <!--
-  <footer class="footer">
-    <div class="container footer-content">
-      <p class="copyright">© 2026 Anna Advisory. All rights reserved.</p>
-      <div class="footer-note" data-i18n="footer_note">Berlin • Zurich • Kyiv</div>
-    </div>
-  </footer>
-  -->
 
   <!-- Enhanced Editorial Footer -->
   <footer class="footer">
